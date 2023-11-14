@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2022.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.2/bin/ninja/win/ninja.exe" -G Ninja -S C:\LINE\scolaire\CLionProjects\ING2_SEM1\PROJET_STATION\PROJET\optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-2-2 -B C:\LINE\scolaire\CLionProjects\ING2_SEM1\PROJET_STATION\PROJET\optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-2-2\cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: C:/LINE/scolaire/CLionProjects/ING2_SEM1/PROJET_STATION/PROJET/optimisation-d-une-ligne-d-assemblage-ing2-tg-2023-2024-2-2/cmake-build-debug
