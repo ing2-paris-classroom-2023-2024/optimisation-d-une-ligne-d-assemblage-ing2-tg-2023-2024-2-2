@@ -3,3 +3,9 @@
 //
 
 #include "STATIONS.h"
+
+int main() {
+    printf("Hello, World!\n");
+    printf("ESSAIE BRANCHE\n");
+    return 0;
+}
