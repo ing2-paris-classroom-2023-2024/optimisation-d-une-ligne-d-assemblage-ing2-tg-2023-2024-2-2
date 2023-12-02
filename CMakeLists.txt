@@ -7,4 +7,5 @@ include_directories(.)
 
 add_executable(optimisation_d_une_ligne_d_assemblage_ing2_tg_2023_2024_2_2
         header.h
-        main.c)
+        main.c
+        exclusion_thib.c)
