@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_OPERATIONS 100
-void exclusion_constraint();
+void exclusion_constraint( );
 typedef struct {
     int op1;
     int op2;
@@ -28,7 +28,7 @@ typedef struct taches* ptaches;
 
 
 void lirefichier_temps (char *  nomFichier, ptaches lesTaches);
-//void lirefichier_exclu (char *  nomFichier, ptaches lesTaches);
+void lirefichier_exclu (char *  nomFichier, ptaches lesTaches, int nbtaches, int operation[nbtaches][2]);
 void lirefichier_precedent (char *  nomFichier, ptaches lesTaches, int nbprec, int nbtaches);
 int nbTaches ();
 int nbprecedences ();

@@ -143,3 +143,55 @@ void lirefichier_precedent (char *  nomFichier, ptaches lesTaches, int nbprec, i
         perror (nomFichier); // si le fichier ne s'ouvre pas
     }
 }
+
+
+void lirefichier_exclu (char *  nomFichier, ptaches lesTaches, int nbtaches, int operation[nbtaches][2]){
+    FILE *fp = fopen (nomFichier, "r"); // ouvre le fichier
+
+
+    if (fp != NULL)
+    {
+        char line[128];
+        int i=0;
+        while (fgets (line, sizeof line, fp) != NULL)
+        {
+            char *p = line;
+
+
+            int valeur=1; // pareil que pour les autres, ppour différencier les deux valeurs
+            float precedent;
+            while (*p != '\n' && *p != 0)
+            {
+
+                char *pend;
+                float val = strtod (p, &pend);
+
+
+                if (*p != 0 && pend != p)
+                {
+                    if (valeur==1){ // donne la tache qui precède
+                       operation[i][1]=val;
+
+                    }
+                    if (valeur==2){
+
+                        operation[i][2]=val;
+                    }
+
+
+                }
+                p = pend + 1;
+                valeur++;
+                i++;
+
+            }
+
+        }
+        fclose (fp), fp = NULL; // ferme le fichier
+    }
+    else
+    {
+        perror (nomFichier); // si le fichier ne s'ouvre pas
+    }
+
+}
