@@ -8,7 +8,7 @@ void exclusion_constraint() {
     };
     int num_operations = sizeof(operations) / sizeof(operations[0]);
 
-
+    int nbstations = 10;
     int graph[MAX_OPERATIONS][MAX_OPERATIONS] = {0};
     int couleurs[MAX_OPERATIONS] = {0};
 
@@ -52,7 +52,7 @@ void exclusion_constraint() {
 
 
     printf("Repartition par station:\n");
-    for (int station = 1; station <= 3; station++) {
+    for (int station = 1; station <= nbstations; station++) {
         printf("Station %d: ", station);
         for (int op = 1; op <= num_operations; op++) {
             if (couleurs[op] == station) {
