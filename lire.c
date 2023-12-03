@@ -145,7 +145,7 @@ void lirefichier_precedent (char *  nomFichier, ptaches lesTaches, int nbprec, i
 }
 
 
-void lirefichier_exclu (char *  nomFichier, ptaches lesTaches, int nbtaches, int operation[nbtaches][2]){
+void lirefichier_exclu (char *  nomFichier, ptaches lesTaches, int nbtaches, float operation[nbtaches][2]){
     FILE *fp = fopen (nomFichier, "r"); // ouvre le fichier
 
 

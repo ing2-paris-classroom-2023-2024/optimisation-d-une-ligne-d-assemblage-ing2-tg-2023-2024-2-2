@@ -1,5 +1,10 @@
 #include "header.h"
 
+/*
+ * NOUS AVONS UTILISES COMME SOURCES? LES COURS DE THEORIE DES GRAPHES? LES SITES  : Open classroom, Squalenet.net, Waytolearnx.com, developpez.net
+ *
+ */
+
 int main(){
 
     exclusion_constraint();
@@ -17,6 +22,7 @@ int main(){
     lirefichier_precedent(nom_fichier2, taches, nbprece,numtaches);
 
     prec_temps(taches, numtaches);
+
 
     return 0;
 }
